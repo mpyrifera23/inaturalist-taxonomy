@@ -1,4 +1,4 @@
-# INaturalist Taxonomy
+# iNaturalist Taxonomy
 
 ## Overview
 
