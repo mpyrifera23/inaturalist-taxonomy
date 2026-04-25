@@ -1,4 +1,5 @@
 import requests
+from urllib.parse import quote
 
 def lookup_inaturalist(common_name):
     """Look up using iNaturalist API"""
@@ -9,7 +10,12 @@ def lookup_inaturalist(common_name):
         
         if data['results']:
             result = data['results'][0]
-            return result.get('name', 'Not found')
+            scientific_name = result.get('name')
+            if not scientific_name:
+                return 'Not found'
+            wiki_slug = scientific_name.replace(' ', '_')
+            wiki_url = f"https://en.wikipedia.org/wiki/{quote(wiki_slug)}"
+            return f"{scientific_name} ({wiki_url})"
         else:
             return 'Organism not found'
     except Exception as e:
