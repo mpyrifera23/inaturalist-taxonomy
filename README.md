@@ -19,7 +19,7 @@ A command-line utility that looks up organism information using the iNaturalist 
 - Query the iNaturalist API (`https://api.inaturalist.org/v1/taxa/autocomplete`)
 - Returns the scientific or official name of the organism
 - Interactive loop for multiple lookups
-- Built-in error handling for API failures and timeouts (5-second timeout)
+- Built-in error handling for API failures and timeouts (30-second timeout)
 
 **Dependencies:**
 - `requests` - For making HTTP requests to the iNaturalist API
