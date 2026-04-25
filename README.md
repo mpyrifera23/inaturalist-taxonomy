@@ -1,10 +1,8 @@
-# testrepo
-
-Figuring out git - A learning project exploring Git workflows and version control.
+# INaturalist Taxonomy
 
 ## Overview
 
-This is an experimental repository used for learning Git concepts and practicing version control. It contains a Python-based taxonomy lookup tool that integrates with the iNaturalist API.
+This is a repo containing a Python-based taxonomy lookup tool that integrates with the iNaturalist API.
 
 ## Language
 
@@ -37,8 +35,8 @@ A command-line utility that looks up organism information using the iNaturalist 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mpyrifera23/testrepo.git
-   cd testrepo
+   git clone https://github.com/mpyrifera23/inaturalist-taxonomy.git
+   cd inaturalist-taxonomy
    ```
 
 2. Install dependencies:
