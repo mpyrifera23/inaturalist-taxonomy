@@ -19,7 +19,9 @@ A command-line utility that looks up organism information using the iNaturalist 
 - Query the iNaturalist API (`https://api.inaturalist.org/v1/taxa/autocomplete`)
 - Returns the scientific or official name of the organism
 - Interactive loop for multiple lookups
-- Built-in error handling for API failures and timeouts (30-second timeout)
+- Validates user input (non-empty and letters/spaces/apostrophes/hyphens only)
+- Requires an exact common-name match from API results to avoid incorrect fuzzy matches
+- Built-in error handling for API failures and timeouts (5-second timeout)
 
 **Dependencies:**
 - `requests` - For making HTTP requests to the iNaturalist API
@@ -56,12 +58,25 @@ Then enter common names at the prompt to look them up:
 
 ```
 Enter a common name (or 'quit' to exit): robin
-Result: Turdus migratorius
+Result: Erithacus rubecula (https://en.wikipedia.org/wiki/Erithacus_rubecula)
 
 Enter a common name (or 'quit' to exit): quit
 ```
 
 The tool will continue accepting input until you type `quit`.
+
+If input is invalid, the tool returns clear validation messages:
+
+```
+Enter a common name (or 'quit' to exit): 
+Result: Invalid input: please enter a common name.
+
+Enter a common name (or 'quit' to exit): robin!
+Result: Invalid input: use letters, spaces, apostrophes, or hyphens only.
+
+Enter a common name (or 'quit' to exit): quir
+Result: Invalid input: no exact common-name match found. Please check spelling.
+```
 
 ## Contributing
 
