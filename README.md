@@ -41,7 +41,7 @@ A command-line utility that looks up organism information using the iNaturalist 
 
 2. Install dependencies:
    ```bash
-   pip install requests
+   pip3 install requests
    ```
 
 ## Usage
@@ -49,7 +49,7 @@ A command-line utility that looks up organism information using the iNaturalist 
 Run the taxonomy lookup tool:
 
 ```bash
-python taxonomy.py
+python3 taxonomy.py
 ```
 
 Then enter common names at the prompt to look them up:
