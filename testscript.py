@@ -8,5 +8,5 @@ if user_input == "bogue":
 if user_input == "coelacanth":
         print("class: Actinistia")
 if user_input == "siamese flat-barbelled catfish":
-        print("Platytropis siamensis")
+        print("Platytropius siamensis")
 
