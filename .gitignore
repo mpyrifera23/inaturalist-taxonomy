@@ -39,6 +39,12 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
+# temp folder
+/temp
+
+# WIP folder
+/wip
+
 # pkgdown site
 docs/
 
