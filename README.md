@@ -26,8 +26,6 @@ A command-line utility that looks up organism information using the iNaturalist 
 **Dependencies:**
 - `requests` - For making HTTP requests to the iNaturalist API
 
-### COMING SOON: Fish Taxonomy Identification Game ('fishgame.py')
-
 ## Getting Started
 
 ### Prerequisites
