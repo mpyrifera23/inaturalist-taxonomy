@@ -23,6 +23,8 @@ A command-line utility that looks up organism information using the iNaturalist 
 - Requires an exact common-name match from API results to avoid incorrect fuzzy matches
 - Built-in error handling for API failures and timeouts (5-second timeout)
 
+### COMING SOON: Fish Taxonomy Identification Game ('fishgame.py')
+
 **Dependencies:**
 - `requests` - For making HTTP requests to the iNaturalist API
 
